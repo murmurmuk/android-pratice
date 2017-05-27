@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="17"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.1"
+    timestamp="487007438801"
+    token="4451454727250521762"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1271" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="347" />
+    <task
+        name="verifier"
+        duration="15" />
+
+    <artifact
+        location="/Users/tien/android-pratice/DualImageView/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="487007438801"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/tien/android-pratice/DualImageView/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

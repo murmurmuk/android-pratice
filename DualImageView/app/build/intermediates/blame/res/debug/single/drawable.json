@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/drawable/ic_radio_button_unchecked_black_24dp.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/drawable/ic_radio_button_unchecked_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/drawable/ic_check_box_outline_blank_black_24dp.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/drawable/ic_check_box_outline_blank_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/drawable/ic_radio_button_checked_black_24dp.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/drawable/ic_radio_button_checked_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/drawable/ic_star_border_black_24dp.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/drawable/ic_star_border_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/drawable/ic_star_black_24dp.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/drawable/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/drawable/ic_check_box_black_24dp.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/drawable/ic_check_box_black_24dp.png"
+    }
+]
