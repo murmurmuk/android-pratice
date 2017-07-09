@@ -1,4 +1,7 @@
-#Sat May 27 16:16:14 CST 2017
-base.0=/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sun Jul 09 10:09:39 CST 2017
+base.0=/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ae1f831f1e0a58087aeeaa0fd7da0f1fec32d5d1
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_34d80a51745e6763d354cf4c9457171af9a6a0fb/classes.dex
+base.1=/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_34d80a51745e6763d354cf4c9457171af9a6a0fb
+file.0=/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ae1f831f1e0a58087aeeaa0fd7da0f1fec32d5d1/classes.dex

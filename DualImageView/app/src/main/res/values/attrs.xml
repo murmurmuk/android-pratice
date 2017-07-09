@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DualImageView">
+        <attr name="Dual_Angel" format="reference"/>
+        <attr name="Dual_Evil" format="reference"/>
+    </declare-styleable>
+</resources>

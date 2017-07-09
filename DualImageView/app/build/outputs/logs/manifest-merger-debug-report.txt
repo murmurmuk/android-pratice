@@ -1,53 +1,87 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:4:5-35
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:3:5-35
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
-	xmlns:tools
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:3:5-51
 	xmlns:android
 		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:6:5-20:19
+ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/tien/.android/build-cache/942b9dd6352a1af7f2d811fe4551d52d21e58393/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/tien/.android/build-cache/b02f9a93805252bfbbe2a7c94198408b029e2fd8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/tien/.android/build-cache/bb0b48b4e2351ed1ca6afe8aed800970b3a622fe/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/tien/.android/build-cache/aa6dd7746fff9e32877b862a2bbc5897a949d019/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/tien/.android/build-cache/e464d7ed4010464080eec72558b1f023409f92df/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/tien/.android/build-cache/bcfc22b9146e3859e57c1fa55290b5ffc54b55b1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/tien/.android/build-cache/278a89d328eeae707e1855d1d72b9eb7a5454b37/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/tien/.android/build-cache/761e38f8c663a490562282b3b7ea7a890f7aaac0/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/tien/.android/build-cache/2414849b615e1cc24ffdd3d5b84e1b3f49c2f944/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tien/.android/build-cache/54efc98bf34923b46f36765188fba3dc30c88259/output/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:8:9-41
 	android:supportsRtl
 		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:10:9-35
-	tools:ignore
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:12:9-60
+	android:roundIcon
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:9:9-54
 	android:allowBackup
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:7:9-43
 	android:theme
 		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:11:9-40
 activity#murmur.dualimageview.MainActivity
-ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:13:9-19:20
+ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:13:19-47
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:14:13-18:29
+ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml:16:27-74
 uses-sdk
 INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/tien/.android/build-cache/942b9dd6352a1af7f2d811fe4551d52d21e58393/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/tien/.android/build-cache/b02f9a93805252bfbbe2a7c94198408b029e2fd8/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/tien/.android/build-cache/bb0b48b4e2351ed1ca6afe8aed800970b3a622fe/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/tien/.android/build-cache/aa6dd7746fff9e32877b862a2bbc5897a949d019/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/tien/.android/build-cache/e464d7ed4010464080eec72558b1f023409f92df/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/tien/.android/build-cache/bcfc22b9146e3859e57c1fa55290b5ffc54b55b1/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/tien/.android/build-cache/278a89d328eeae707e1855d1d72b9eb7a5454b37/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/tien/.android/build-cache/761e38f8c663a490562282b3b7ea7a890f7aaac0/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/tien/.android/build-cache/2414849b615e1cc24ffdd3d5b84e1b3f49c2f944/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/tien/.android/build-cache/54efc98bf34923b46f36765188fba3dc30c88259/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/tien/.android/build-cache/942b9dd6352a1af7f2d811fe4551d52d21e58393/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tien/android-pratice/DualImageView/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/tien/.android/build-cache/942b9dd6352a1af7f2d811fe4551d52d21e58393/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/tien/.android/build-cache/b02f9a93805252bfbbe2a7c94198408b029e2fd8/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/tien/.android/build-cache/bb0b48b4e2351ed1ca6afe8aed800970b3a622fe/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/tien/.android/build-cache/aa6dd7746fff9e32877b862a2bbc5897a949d019/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/tien/.android/build-cache/e464d7ed4010464080eec72558b1f023409f92df/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/tien/.android/build-cache/bcfc22b9146e3859e57c1fa55290b5ffc54b55b1/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/tien/.android/build-cache/278a89d328eeae707e1855d1d72b9eb7a5454b37/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/tien/.android/build-cache/761e38f8c663a490562282b3b7ea7a890f7aaac0/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/tien/.android/build-cache/2414849b615e1cc24ffdd3d5b84e1b3f49c2f944/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/tien/.android/build-cache/942b9dd6352a1af7f2d811fe4551d52d21e58393/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/tien/.android/build-cache/942b9dd6352a1af7f2d811fe4551d52d21e58393/output/AndroidManifest.xml:26:9-47

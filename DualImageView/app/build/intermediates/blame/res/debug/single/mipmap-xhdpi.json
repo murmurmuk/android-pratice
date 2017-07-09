@@ -2,5 +2,9 @@
     {
         "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tien/android-pratice/DualImageView/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/Users/tien/android-pratice/DualImageView/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     }
 ]

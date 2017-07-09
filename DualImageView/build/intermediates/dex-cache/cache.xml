@@ -2,22 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/tien/android-pratice/DualImageView/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a05a0ce0282c0d82a106808a7e6317c0777d3204">
-        <dex dex="/Users/tien/android-pratice/DualImageView/app/build/intermediates/pre-dexed/debug/instant-run_34d80a51745e6763d354cf4c9457171af9a6a0fb.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/Users/tien/android-pratice/DualImageView/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.3"
-        sha1="53562c5f279db40df4fa8dafcc98b0349c09fd4d">
-        <dex dex="/Users/tien/android-pratice/DualImageView/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ae1f831f1e0a58087aeeaa0fd7da0f1fec32d5d1.jar" />
+        revision="25.0.0"
+        sha1="673463c373ca5012b804e054186a1e0b6285c320">
+        <dex dex="/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ae1f831f1e0a58087aeeaa0fd7da0f1fec32d5d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tien/android-pratice/DualImageView/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/tien/android-pratice/DualImageView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_34d80a51745e6763d354cf4c9457171af9a6a0fb/classes.dex" />
     </item>
 
 </items>
