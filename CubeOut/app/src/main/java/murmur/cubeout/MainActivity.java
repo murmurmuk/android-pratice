@@ -1,17 +1,18 @@
 package murmur.cubeout;
 
+import android.animation.Animator;
+import android.animation.ValueAnimator;
 import android.databinding.DataBindingUtil;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 
 import murmur.cubeout.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding mActivityMainBinding;
-    private Handler mHandler;
-    private Runnable mTurnRunnable;
+    private ValueAnimator mTurnAnimator;
     private View mLeft, mRight;
     private boolean mTurnDir;
     private boolean mClock;
@@ -42,18 +43,56 @@ public class MainActivity extends AppCompatActivity {
         if(mLeft.getVisibility() != View.VISIBLE) {
             mLeft.setVisibility(View.VISIBLE);
         }
-        if(mTurnDir){
-            if(place < 0.001f){
-                mLeft.setVisibility(View.GONE);
-                mLeft = mRight = null;
+    }
+
+    private void getAnimator(){
+        mTurnAnimator = ValueAnimator.ofFloat(0.0f, 1.0f);
+        mTurnAnimator.setInterpolator(new LinearInterpolator());
+        mTurnAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                if(mTurnDir) {
+                    handleCube(1 - mTurnAnimator.getAnimatedFraction());
+                }
+                else{
+                    handleCube(mTurnAnimator.getAnimatedFraction());
+                }
             }
-        }
-        else{
-            if(place > 0.999f){
-                mRight.setVisibility(View.GONE);
-                mLeft = mRight = null;
+        });
+        mTurnAnimator.setDuration(500);
+        mTurnAnimator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animator) {
+
             }
-        }
+
+            @Override
+            public void onAnimationEnd(Animator animator) {
+                if(mTurnDir){
+                    mRight.setTranslationX(0);
+                    mLeft.setVisibility(View.GONE);
+                }
+                else{
+                    mLeft.setTranslationX(0);
+                    mRight.setVisibility(View.GONE);
+                }
+                mLeft = mRight = null;
+                mTurnAnimator.setInterpolator(null);
+                mTurnAnimator.removeAllUpdateListeners();
+                mTurnAnimator.removeAllListeners();
+                mTurnAnimator = null;
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animator) {
+
+            }
+        });
     }
 
 
@@ -62,7 +101,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         if(mLeft != null && mRight != null){
-            mHandler.removeCallbacks(mTurnRunnable);
+            if(mTurnAnimator != null) {
+                mTurnAnimator.removeAllUpdateListeners();
+                mTurnAnimator.removeAllListeners();
+                mTurnAnimator.end();
+            }
             if(mTurnDir){
                 mRight.bringToFront();
                 mRight.setRotationY(0);
@@ -80,44 +123,14 @@ public class MainActivity extends AppCompatActivity {
         mLeft = left;
         mRight = right;
         mTurnDir = dir;
-        if(dir){
-            mTurnRunnable = new Runnable() {
-                float place = 1f;
-                @Override
-                public void run() {
-                    place -= 0.1f;
-                    handleCube(place);
-                    if(!(place < 0)) {
-                        mHandler.postDelayed(this, 50);
-                    }
-                }
-            };
-            mTurnRunnable.run();
-
-        }
-        else{
-            mTurnRunnable = new Runnable() {
-                float place = 0f;
-                @Override
-                public void run() {
-                    place += 0.1f;
-                    handleCube(place);
-                    if(place < 1) {
-                        mHandler.postDelayed(this, 50);
-                    }
-                }
-            };
-            mTurnRunnable.run();
-
-        }
+        getAnimator();
+        mTurnAnimator.start();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
-        mHandler = new Handler();
 
         mActivityMainBinding.b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,10 +152,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(mClock){
-                    handleTurn(mActivityMainBinding.page3, mActivityMainBinding.page1, false);
+                    handleTurn(mActivityMainBinding.page1, mActivityMainBinding.page2, true);
                 }
                 else {
-                    handleTurn(mActivityMainBinding.page1, mActivityMainBinding.page2, true);
+                    handleTurn(mActivityMainBinding.page3, mActivityMainBinding.page1, false);
                 }
             }
         });
@@ -150,21 +163,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(mClock){
-                    handleTurn(mActivityMainBinding.page1, mActivityMainBinding.page2, false);
+                    handleTurn(mActivityMainBinding.page2, mActivityMainBinding.page3, true);
                 }
                 else {
-                    handleTurn(mActivityMainBinding.page2, mActivityMainBinding.page3, true);
-                }            }
+                    handleTurn(mActivityMainBinding.page1, mActivityMainBinding.page2, false);
+
+                }
+            }
         });
         mActivityMainBinding.page3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(mClock){
-                    handleTurn(mActivityMainBinding.page2, mActivityMainBinding.page3, false);
+                    handleTurn(mActivityMainBinding.page3, mActivityMainBinding.page1, true);
                 }
                 else {
-                    handleTurn(mActivityMainBinding.page3, mActivityMainBinding.page1, true);
-                }            }
+                    handleTurn(mActivityMainBinding.page2, mActivityMainBinding.page3, false);
+                }
+            }
         });
 
     }
