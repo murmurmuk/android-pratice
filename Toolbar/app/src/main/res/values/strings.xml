@@ -2,4 +2,7 @@
     <string name="app_name">Toolbar</string>
     <string name="main_item1">main_item1</string>
     <string name="main_item2">main_item2</string>
+    <string name="frag_menu">frag_menu</string>
+    <string name="frag_item1">frag_item1</string>
+    <string name="frag_item2">frag_item2</string>
 </resources>

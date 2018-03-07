@@ -17,10 +17,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun setFragment() {
+        val fragment = fragmentManager.findFragmentById(R.id.content)
+        as MyFragment? ?: MyFragment.getInstance()
+        val transaction = fragmentManager.beginTransaction()
+        transaction.replace(R.id.content, fragment)
+        transaction.commit()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setToolbar()
+        setFragment()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -47,6 +56,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-
 }
