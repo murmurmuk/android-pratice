@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">IconWrapText</string>
+    <string name="icon">icon</string>
+    <string name="short_string">Hello world</string>
+    <string name="long_string">Fair is foul, and foul is fair: Hover through the fog and filthy air.</string>
 </resources>
